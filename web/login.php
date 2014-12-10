@@ -86,23 +86,55 @@
         <!-- Brands -->
         <div class="brands">
 		<center>
-		<h1>Your Account</h1> 
-		<table>
-			<tr>
-				<td>ID :</td><td><input type="text" name ="id" value=""/><td/>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="content-left">
+          <tbody>
+
+          <tr>
+            <td align="center" width="100%">
+			<form action="./index.php" method="post">
+			<table class="userpanel" border="0" cellpadding="0" cellspacing="5" width="200">
+				<tbody><tr>
+					<td colspan="2" align="center" background="./images/user_bg.jpg" height="20"><strong>:: Login User ::</strong></td>
+				</tr>
+				<tr>
+					<td align="right" width="50%">Username :</td>
+					<td align="left" width="50%"><input type="text" size="10" maxlength="12" name="username"></td>
+				</tr>
+				<tr>
+					<td align="right" width="50%">Password :</td>
+					<td align="left" width="50%"><input type="password" size="10" maxlength="12" name="password"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><hr></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					<input type="submit" name="submit" value=":: LOGIN ::">
+					<input type="reset" name="cancel" value=":: CANCEL ::"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><hr></td>
+				</tr>
+				<tr>
+					<td colspan="2">Tidak memiliki account? Buat sekarang <strong><a href="register.php">clicking here</a></strong>!</td>
+				</tr>
+				<tr>
+					<td colspan="2">Lupa password? Laporkan ke Admin <strong><a href="mailto:laviikerzz@yahoo.co.id?subject=Lost Password">clicking here</a></strong>!</td>
+				</tr>
+				<tr>
+				<td colspan="2"><hr></td>
 			</tr>
-			<tr>
-				<td>Password :</td><td><input type="password" name ="pw" value=""/></td><br/>
+			<tr align="center">
+				<td colspan="2"><font color="#FF0000" size="2"><strong>:: Contact ::</strong></font><br><br>
+					<a target="_blank" href="http://ymgen.com/chat.php?idne=laviikerzz">
+					<img border="0" src="./images/online.gif" style="width: 155px;"></a>
+				</td>
 			</tr>
-			<tr>
-			<td>  </td>
-			</tr>
-			<tr>
-			<td></td>
-				<td><input type="submit" name ="login" value="Login"/>
-				<input type="submit" name ="Cancel" value="Cancel"/></td>
-			</tr>
-		</table>
+			
+			</tbody></table>
+			</form>
+			
+			</td></tr></tbody></table>
 		</center>
           <h3>Brands</h3>
           <div class="logos"> <a href="#"><img src="css/images/logo1.gif" alt=""></a> <a href="#"><img src="css/images/logo2.gif" alt=""></a> <a href="#"><img src="css/images/logo3.gif" alt=""></a> <a href="#"><img src="css/images/logo4.gif" alt=""></a> <a href="#"><img src="css/images/logo5.gif" alt=""></a> </div>

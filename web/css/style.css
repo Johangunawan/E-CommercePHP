@@ -1,8 +1,11 @@
 * { padding:0; margin:0; outline:0; }
+
 body {
-	background:#fff;
-	font-family: Arial, sans-serif;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size:12px;
+	background-image: url(../images/bg.jpg);
+	background-color: #fff;
+	background-repeat: repeat-x;
 	line-height:17px;
 	color:#6f6e6e;
 }
@@ -111,3 +114,7 @@ h1#logo a{ display:block; height:61px; text-indent: -4000px; background:url(imag
 .tab-content { display:none;}
 
 .tabbed { min-height:420px;}
+table.userpanel {
+	border: 1px solid #000000;
+	margin: 5px;
+}

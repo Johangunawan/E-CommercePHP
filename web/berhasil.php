@@ -87,48 +87,17 @@
         <!-- Brands -->
         <div class="brands">
 		<center>
-		<h1>Create Account</h1> 
+		<h1>Account has been Created</h1> 
 		<table width="90%" align="center" cellpadding="0" cellspacing="5" class="userpanel">
 			<tr>
 				<td align="center" background="./images/user_bg.jpg" height="20"><strong>:: Register ::</strong></td>
 			</tr>
 			<tr align="center">
 				<td>
-				<form action="berhasil.php" method="POST"> 
+				<form action="terimakasih.html" method="POST"> 
 				<table width="80%" align="center">
 					<tr>
-						<td>Username</td><td>:</td><td><input name="username" type="text" /></td>
-					</tr>
-					<tr>
-						<td>Password</td><td>:</td><td><input name="password" type="password" /></td>
-					</tr>
-					<tr>
-						<td>Confirm Password</td><td>:</td><td><input name="password2" type="password" /></td>
-					</tr>
-					<tr>
-						<td>Email</td><td>:</td><td><input name="email" type="text" /></td>
-					</tr>
-					<tr>
-						<td>Real Name</td><td>:</td><td><input name="realname" type="text" /></td>
-					</tr>
-					<tr>
-						<td>Address</td><td>:</td><td><input name="address" type="text" /></td>
-					</tr>
-					<tr>
-						<td>Telephone</td><td>:</td><td><input name="telp" type="text" /></td>
-					</tr>
-					<tr>
-						<td>    </td>
-					</tr>
-					<tr>
-						<td>    </td>
-					</tr>
-					<tr>
-						<td>    </td>
-					</tr>
-					<tr>
-						<td colspan="3" align="center"><input type="submit" name="submit" value="Submit" />
-						<input type="submit" name="submit" value="Cancel" /></td>
+						<td align="center" class="news"><strong>Terima kasih Account andah Telah Terdaftar.</strong></td>
 					</tr>
 					
 				</table>
