@@ -92,7 +92,7 @@
           <tr>
             <td align="center" width="100%">
 			<form action="./index.php" method="post">
-			<table class="userpanel" border="0" cellpadding="0" cellspacing="5" width="200">
+			<table class="userpanel" border="0" cellpadding="0" cellspacing="5" width="270">
 				<tbody><tr>
 					<td colspan="2" align="center" background="./images/user_bg.jpg" height="20"><strong>:: Login User ::</strong></td>
 				</tr>
@@ -116,10 +116,10 @@
 					<td colspan="2"><hr></td>
 				</tr>
 				<tr>
-					<td colspan="2">Tidak memiliki account? Buat sekarang <strong><a href="register.php">clicking here</a></strong>!</td>
+					<td colspan="2">Tidak memiliki account? Buat sekarang <strong><a href="register.php">click here!</a></strong></td>
 				</tr>
 				<tr>
-					<td colspan="2">Lupa password? Laporkan ke Admin <strong><a href="mailto:laviikerzz@yahoo.co.id?subject=Lost Password">clicking here</a></strong>!</td>
+					<td colspan="2">Lupa password? Laporkan ke Admin <strong><a href="mailto:laviikerzz@yahoo.co.id?subject=Lost Password">click here!</a></strong></td>
 				</tr>
 				<tr>
 				<td colspan="2"><hr></td>
