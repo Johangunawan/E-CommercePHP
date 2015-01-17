@@ -1,0 +1,15 @@
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\bin\Release\HRD.exe.config
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\bin\Release\HRD.exe.manifest
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\bin\Release\HRD.application
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\bin\Release\HRD.exe
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\bin\Release\HRD.pdb
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\bin\Release\HRD.xml
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\obj\Release\HRD.tabeldata.resources
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\obj\Release\HRD.inputedata.resources
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\obj\Release\HRD.Resources.resources
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\obj\Release\HRD.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\obj\Release\HRD.exe.manifest
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\obj\Release\HRD.application
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\obj\Release\HRD.exe
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\obj\Release\HRD.xml
+C:\Users\User\Documents\Visual Studio 2012\Projects\HRD\HRD\obj\Release\HRD.pdb
