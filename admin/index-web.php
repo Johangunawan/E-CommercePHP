@@ -68,7 +68,11 @@
         <ul>
           <li><a href="index-web.php">Home</a></li>
           <li><a href="produk.php">Product</a></li>
+<<<<<<< HEAD
           <li><a href="konfirmasi.php">Confirmation Payment</a></li>
+=======
+          <li><a href="pembayaran.php">Confirmation Payment</a></li>
+>>>>>>> origin/master
           <li><a href="keranjang.php">Cart</a></li>
           <li class="last"><a href="contactus.php">Contact Us</a></li>
         </ul>
