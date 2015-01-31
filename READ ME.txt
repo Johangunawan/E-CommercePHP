@@ -2,8 +2,10 @@ Johan Gunawan 2012100042 (dologin,dodelete,doupdate)
 
 Maria Tisna 2012100251(database)
 
-Regifasius Winfrid 2012100055(keseluruhan tampilan)
+Regifasius Winfrid 2012100055(keseluruhan website)
 
 Nurul Endah 2012100151(login,dologin,tampilan web)
 
 Ardiansyah 102110054(insert data,koneksi)
+
+Hosting web tugasmobile.16mb.com  pakek hosting yang lama pak <regifasius>
