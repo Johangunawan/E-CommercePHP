@@ -1,3 +1,7 @@
+<?php
+	include("koneksi.php");
+	$idgaleri = $_GET['id'];
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -63,11 +67,11 @@
 <!-- Menu -->
 	<div id="navigation">
         <ul>
-          <li><a href="index.php">Home</a></li>
+          <li><a href="index-web.php">Home</a></li>
           <li><a href="produk.php">Product</a></li>
-          <li><a href="pembayaran.php">Confirmation Payment</a></li>
+          <li><a href="konfirmasi.php">Confirmation Payment</a></li>
           <li><a href="keranjang.php">Cart</a></li>
-          <li class="last"><a href="contact.php">Contact Us</a></li>
+          <li class="last"><a href="contactus.php">Contact Us</a></li>
         </ul>
       </div>
 <!-- Menu -->
@@ -76,7 +80,7 @@
       <!-- Tabs -->
       <div class="tabs">
         <ul>
-          <li><a href="#" class="active"><span>What's New</span></a></li>
+          <li><a href="#" class="active"><span>Keteranggan Foto</span></a></li>
           <li><a href="#"><span>Promo</span></a></li>
           <li><a href="#" class="red"><span>More Shoes</span></a></li>
         </ul>
@@ -90,58 +94,43 @@
             <div class="items">
               <div class="cl">&nbsp;</div>
               <ul>
-                <li>
-                  <div class="image"> <a href="#"><img src="css/images/image1.jpg" alt="" /></a> </div>
-                  <p> Item Number: <span>141201</span><br />
-                    Brand Name: <span>Howard Grey Boots</span><br />
-                   <br /> <a href="#"> See More >>> </a> </p>  
-                </li>
-                <li>
-                  <div class="image"> <a href="#"><img src="css/images/image2.jpg" alt="" /></a> </div>
-                  <p> Item Number: <span>141202</span><br />
-                    Brand Name: <span>Nefrity Pink Oxford</span><br />
-                    <br /> <a href="#"> See More >>> </a> </p>  
-                </li>
-                <li>
-                  <div class="image"> <a href="#"><img src="css/images/image3.jpg" alt="" /></a> </div>
-                  <p> Item Number: <span>141203</span><br />
-                    Brand Name: <span>Locturna Tassel Tan</span><br />
-                    <br /> <a href="#"> See More >>> </a> </p> 
-                </li>
-                <li>
-                  <div class="image"> <a href="#"><img src="css/images/image4.jpg" alt="" /></a> </div>
-                  <p> Item Number: <span>141204</span><br />
-                    Brand Name:  <span>Autolycyus Bnw</span><br />
-                    <br /> <a href="#"> See More >>> </a> </p> 
-                </li>
-                <li>
-                  <div class="image"> <a href="#"><img src="css/images/image4.jpg" alt="" /></a> </div>
-                  <p> Item Number: <span>125515</span><br />
-                    Size List : <span>8/8.5/9.5/10/11</span><br />
-                    Brand Name: <a href="#">Adidas Shoes</a> </p>
-                  <p class="price">Wholesale Price: <strong>53 USD</strong></p>
-                </li>
-                <li>
-                  <div class="image"> <a href="#"><img src="css/images/image3.jpg" alt="" /></a> </div>
-                  <p> Item Number: <span>125515</span><br />
-                    Size List : <span>8/8.5/9.5/10/11</span><br />
-                    Brand Name: <a href="#">Adidas Shoes</a> </p>
-                  <p class="price">Wholesale Price: <strong>53 USD</strong></p>
-                </li>
-                <li>
-                  <div class="image"> <a href="#"><img src="css/images/image2.jpg" alt="" /></a> </div>
-                  <p> Item Number: <span>125515</span><br />
-                    Size List : <span>8/8.5/9.5/10/11</span><br />
-                    Brand Name: <a href="#">Adidas Shoes</a> </p>
-                  <p class="price">Wholesale Price: <strong>53 USD</strong></p>
-                </li>
-                <li>
-                  <div class="image"> <a href="#"><img src="css/images/image1.jpg" alt="" /></a> </div>
-                  <p> Item Number: <span>125515</span><br />
-                    Size List : <span>8/8.5/9.5/10/11</span><br />
-                    Brand Name: <a href="#">Adidas Shoes</a> </p>
-                  <p class="price">Wholesale Price: <strong>53 USD</strong></p>
-                </li>
+                
+				<?php
+				$gbr = "";
+				$ttl = "";
+				$desc = "";
+				$result = mysqli_query($con,"Select * from gallery where Id = '$idgaleri'");
+				while($row = mysqli_fetch_array($result)) // fetch untuk ngambil araay result
+				{
+					$gbr = $row[3];
+					$ttl = $row[1];
+					$desc = $row[2];
+				}
+				?>
+				<center>
+				<form id="ket-photo" action="index-web.php?id=<?php echo $idgaleri; ?>" method="">
+				<div id="photo">
+					<img src="gambar/<?php echo $gbr; ?>" />
+				</div>
+				<div id="details">
+					<div class="field">
+						<label>Brand Name</label>
+						<?php echo $ttl; ?>
+					</div>
+					<div class="field">
+						<label>Description</label>
+						<?php echo $desc; ?>
+					</div>
+				</div>
+				
+				<input type="submit" value="Kembali"/>
+				</form>
+				<form id="ket-photo" action="insert.php?id=<?php echo $idgaleri; ?>" method="POST">
+				<input type="submit" name="update" value="Beli" />
+				</form>
+			
+			
+			</center>
               </ul>
               <div class="cl">&nbsp;</div>
             </div>
@@ -337,7 +326,7 @@
           <!-- End Third Tab Content -->
         </div>
         <!-- Brands -->
-        <div class="brands">
+        <div class="brands" align="center">
           <h3>Brands</h3>
           <div class="logos"> <a href="#"><img src="css/images/logo1.gif" alt="" /></a> <a href="#"><img src="css/images/logo2.gif" alt="" /></a> <a href="#"><img src="css/images/logo3.gif" alt="" /></a> <a href="#"><img src="css/images/logo4.gif" alt="" /></a> <a href="#"><img src="css/images/logo5.gif" alt="" /></a> </div>
         </div>
